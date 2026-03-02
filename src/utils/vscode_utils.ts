@@ -1,5 +1,4 @@
 import * as vscode from "vscode";
-import { globals } from "../extension";
 
 const EXTENSION_PREFIX = "godotTools";
 

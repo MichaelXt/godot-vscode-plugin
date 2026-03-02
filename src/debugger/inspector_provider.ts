@@ -1,5 +1,5 @@
 import { EventEmitter, TreeDataProvider, TreeItem, TreeItemCollapsibleState, TreeView, window } from "vscode";
-import { GodotVariable, ObjectId, RawObject } from "./debug_runtime";
+import { GodotVariable, ObjectId, RawObject } from "./debug_runtime.js";
 
 export class InspectorProvider implements TreeDataProvider<RemoteProperty> {
 	private changeTreeEvent = new EventEmitter<RemoteProperty>();

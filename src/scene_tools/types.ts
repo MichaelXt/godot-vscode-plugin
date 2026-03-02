@@ -5,7 +5,7 @@ import {
 	Uri
 } from "vscode";
 import * as path from "node:path";
-import { get_extension_uri } from "../utils";
+import { get_extension_uri } from "../utils/index.js";
 
 const iconDir = get_extension_uri("resources", "godot_icons").fsPath;
 

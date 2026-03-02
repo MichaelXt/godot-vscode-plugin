@@ -19,7 +19,7 @@ import {
 	StringName,
 	Projection,
 	ENCODE_FLAG_64,
-} from "./variants";
+} from "./variants.js";
 
 export class VariantEncoder {
 	public encode_variant(

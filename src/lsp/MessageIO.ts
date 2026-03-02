@@ -11,8 +11,8 @@ import {
 } from "vscode-jsonrpc";
 import { EventEmitter } from "node:events";
 import { Socket } from "net";
-import MessageBuffer from "./MessageBuffer";
-import { createLogger } from "../utils";
+import MessageBuffer from "./MessageBuffer.js";
+import { createLogger } from "../utils/index.js";
 
 const log = createLogger("lsp.io", { output: "Godot LSP" });
 

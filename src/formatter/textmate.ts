@@ -1,10 +1,10 @@
 import { TextEdit } from "vscode";
 import type { TextDocument, TextLine } from "vscode";
 import * as fs from "node:fs";
-import * as vsctm from "vscode-textmate";
-import * as oniguruma from "vscode-oniguruma";
-import { keywords, symbols } from "./symbols";
-import { get_configuration, get_extension_uri, createLogger, is_debug_mode } from "../utils";
+import { default as vsctm } from "vscode-textmate";
+import { default as oniguruma } from "vscode-oniguruma";
+import { keywords, symbols } from "./symbols.js";
+import { get_configuration, get_extension_uri, createLogger, is_debug_mode } from "../utils/index.js";
 
 const log = createLogger("formatter.tm");
 

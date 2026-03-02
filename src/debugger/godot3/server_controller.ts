@@ -13,22 +13,22 @@ import {
 	get_project_version,
 	verify_godot_version,
 	VERIFY_RESULT,
-} from "../../utils";
-import { prompt_for_godot_executable } from "../../utils/prompts";
-import { killSubProcesses, subProcess } from "../../utils/subspawn";
-import { GodotStackFrame, GodotStackVars } from "../debug_runtime";
-import { AttachRequestArguments, LaunchRequestArguments, pinnedScene } from "../debugger";
-import { GodotDebugSession } from "./debug_session";
-import { build_sub_values, parse_next_scene_node, split_buffers } from "./helpers";
-import { VariantDecoder } from "./variables/variant_decoder";
-import { VariantEncoder } from "./variables/variant_encoder";
-import { RawObject } from "./variables/variants";
-import BBCodeToAnsi from "bbcode-to-ansi";
+} from "../../utils/index.js";
+import { prompt_for_godot_executable } from "../../utils/prompts.js";
+import { killSubProcesses, subProcess } from "../../utils/subspawn.js";
+import { GodotStackFrame, GodotStackVars } from "../debug_runtime.js";
+import { AttachRequestArguments, LaunchRequestArguments, pinnedScene } from "../debugger.js";
+import { GodotDebugSession } from "./debug_session.js";
+import { build_sub_values, parse_next_scene_node, split_buffers } from "./helpers.js";
+import { VariantDecoder } from "./variables/variant_decoder.js";
+import { VariantEncoder } from "./variables/variant_encoder.js";
+import { RawObject } from "./variables/variants.js";
+import BBCodeToAnsiModule from "bbcode-to-ansi";
 
 const log = createLogger("debugger.controller", { output: "Godot Debugger" });
 const socketLog = createLogger("debugger.socket");
 //initialize bbcodeParser and set default output color to grey
-const bbcodeParser = new BBCodeToAnsi("\u001b[38;2;211;211;211m");
+const bbcodeParser = new BBCodeToAnsiModule.default("\u001b[38;2;211;211;211m");
 
 class Command {
 	public command = "";

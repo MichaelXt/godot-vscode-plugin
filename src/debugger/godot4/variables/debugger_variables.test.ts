@@ -13,7 +13,7 @@ chaiAsPromised.then((module) => {
 
 import { promisify } from "node:util";
 import { execFile } from "node:child_process";
-import { clean_godot_path } from "../../../utils";
+import { clean_godot_path } from "../../../utils/index.js";
 
 const execFileAsync = promisify(execFile);
 

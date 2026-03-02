@@ -8,8 +8,8 @@ import {
 	type DocumentLinkProvider,
 	type ExtensionContext,
 } from "vscode";
-import { SceneParser } from "../scene_tools";
-import { convert_resource_path_to_uri, convert_uids_to_uris, createLogger } from "../utils";
+import { SceneParser } from "../scene_tools/index.js";
+import { convert_resource_path_to_uri, convert_uids_to_uris, createLogger } from "../utils/index.js";
 
 const log = createLogger("providers.document_links");
 

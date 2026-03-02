@@ -1,10 +1,10 @@
 import * as vscode from "vscode";
 import { SymbolKind } from "vscode-languageclient";
 import * as Prism from "prismjs";
-import * as csharp from "prismjs/components/prism-csharp";
+import * as csharp from "prismjs/components/prism-csharp.js";
 import { marked } from "marked";
-import type { GodotNativeSymbol } from "./documentation_types";
-import { get_extension_uri } from "../utils";
+import type { GodotNativeSymbol } from "./documentation_types.js";
+import { get_extension_uri } from "../utils/index.js";
 import yabbcode = require("ya-bbcode");
 
 const parser = new yabbcode();

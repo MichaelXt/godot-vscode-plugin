@@ -1,6 +1,6 @@
-import { GodotVariable } from "../debug_runtime";
-import { SceneNode } from "../scene_tree_provider";
-import { ObjectId } from "./variables/variants";
+import { GodotVariable } from "../debug_runtime.js";
+import { SceneNode } from "../scene_tree_provider.js";
+import { ObjectId } from "./variables/variants.js";
 
 export function parse_next_scene_node(params: any[], ofs: { offset: number } = { offset: 0 }): SceneNode {
 	const childCount: number = params[ofs.offset++];

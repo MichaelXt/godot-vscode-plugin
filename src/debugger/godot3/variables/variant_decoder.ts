@@ -14,7 +14,7 @@ import {
 	Transform,
 	Transform2D,
 	RawObject,
-} from "./variants";
+} from "./variants.js";
 
 export class VariantDecoder {
 	public decode_variant(model: BufferModel) {

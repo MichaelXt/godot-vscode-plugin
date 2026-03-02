@@ -1,6 +1,6 @@
 import * as path from "node:path";
 import { EventEmitter, TreeDataProvider, TreeItem, TreeItemCollapsibleState, TreeView, Uri, window } from "vscode";
-import { get_extension_uri } from "../utils";
+import { get_extension_uri } from "../utils/index.js";
 
 const iconDir = get_extension_uri("resources", "godot_icons").fsPath;
 

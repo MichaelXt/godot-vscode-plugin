@@ -1,1 +1,1 @@
-export { ClientConnectionManager, ManagerStatus } from "./ClientConnectionManager";
+export { ClientConnectionManager, ManagerStatus } from "./ClientConnectionManager.js";

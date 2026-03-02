@@ -13,9 +13,9 @@ import {
 	TextDocument,
 	Uri,
 } from "vscode";
-import { SceneParser } from "../scene_tools/parser";
-import { createLogger, node_name_to_snake, get_project_version, convert_uri_to_resource_path } from "../utils";
-import { SceneNode } from "../scene_tools/types";
+import { SceneParser } from "../scene_tools/parser.js";
+import { createLogger, node_name_to_snake, get_project_version, convert_uri_to_resource_path } from "../utils/index.js";
+import { SceneNode } from "../scene_tools/types.js";
 
 const log = createLogger("providers.drops");
 

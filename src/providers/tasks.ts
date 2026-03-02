@@ -6,7 +6,7 @@ import {
 	TaskDefinition,
 	ExtensionContext,
 } from "vscode";
-import { createLogger } from "../utils";
+import { createLogger } from "../utils/index.js";
 
 const log = createLogger("providers.tasks");
 

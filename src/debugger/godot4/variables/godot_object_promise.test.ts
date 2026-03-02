@@ -1,6 +1,6 @@
 import sinon from "sinon";
 import chai from "chai";
-import { GodotObject, GodotObjectPromise } from "./godot_object_promise";
+import { GodotObject, GodotObjectPromise } from "./godot_object_promise.js";
 // import chaiAsPromised from "chai-as-promised";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const chaiAsPromised = import("chai-as-promised");

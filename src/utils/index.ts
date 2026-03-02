@@ -3,10 +3,10 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as vscode from "vscode";
 
-export * from "./logger";
-export * from "./godot_utils";
-export * from "./settings_updater";
-export * from "./vscode_utils";
+export * from "./logger.js";
+export * from "./godot_utils.js";
+export * from "./settings_updater.js";
+export * from "./vscode_utils.js";
 
 export function is_debug_mode(): boolean {
 	return process.env.VSCODE_DEBUG_MODE === "true";

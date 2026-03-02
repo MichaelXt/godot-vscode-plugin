@@ -10,10 +10,10 @@ import {
 	set_configuration,
 	set_context,
 	verify_godot_version,
-} from "../utils";
-import { prompt_for_godot_executable, prompt_for_reload, select_godot_executable } from "../utils/prompts";
-import { killSubProcesses, subProcess } from "../utils/subspawn";
-import GDScriptLanguageClient, { ClientStatus, TargetLSP } from "./GDScriptLanguageClient";
+} from "../utils/index.js";
+import { prompt_for_godot_executable, prompt_for_reload, select_godot_executable } from "../utils/prompts.js";
+import { killSubProcesses, subProcess } from "../utils/subspawn.js";
+import GDScriptLanguageClient, { ClientStatus, TargetLSP } from "./GDScriptLanguageClient.js";
 import { EventEmitter } from "vscode";
 
 const log = createLogger("lsp.manager", { output: "Godot LSP" });

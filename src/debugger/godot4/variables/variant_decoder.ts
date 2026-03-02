@@ -29,7 +29,7 @@ import {
 	RID,
 	Callable,
 	Signal,
-} from "./variants";
+} from "./variants.js";
 
 export class VariantDecoder {
 	public decode_variant(model: BufferModel) {

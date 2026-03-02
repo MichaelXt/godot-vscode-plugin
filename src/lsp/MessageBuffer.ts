@@ -3,7 +3,7 @@
  * Licensed under the MIT License. See License.txt in the project root for license information.
  * ------------------------------------------------------------------------------------------ */
 
-import { createLogger } from "../utils";
+import { createLogger } from "../utils/index.js";
 
 const log = createLogger("lsp.buf");
 

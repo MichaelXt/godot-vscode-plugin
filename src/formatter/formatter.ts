@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
-import { format_document } from "./textmate";
-import { createLogger } from "../utils";
+import { format_document } from "./textmate.js";
+import { createLogger } from "../utils/index.js";
 
 const log = createLogger("formatter");
 

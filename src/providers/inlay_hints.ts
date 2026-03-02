@@ -13,10 +13,10 @@ import {
 	TextDocument,
 	TextEdit,
 } from "vscode";
-import { globals } from "../extension";
-import { ManagerStatus } from "../lsp";
-import { SceneParser } from "../scene_tools";
-import { createLogger, get_configuration } from "../utils";
+import { globals } from "../extension.js";
+import { ManagerStatus } from "../lsp/index.js";
+import { SceneParser } from "../scene_tools/index.js";
+import { createLogger, get_configuration } from "../utils/index.js";
 
 const log = createLogger("providers.inlay_hints");
 

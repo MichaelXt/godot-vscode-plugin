@@ -10,14 +10,14 @@ import {
 import { DebugProtocol } from "@vscode/debugprotocol";
 import { Subject } from "await-notify";
 import { debug } from "vscode";
-import { createLogger } from "../../utils";
-import { GodotDebugData, GodotStackVars, GodotVariable } from "../debug_runtime";
-import { AttachRequestArguments, LaunchRequestArguments } from "../debugger";
-import { InspectorProvider } from "../inspector_provider";
-import { SceneTreeProvider } from "../scene_tree_provider";
-import { is_variable_built_in_type, parse_variable } from "./helpers";
-import { ServerController } from "./server_controller";
-import { ObjectId } from "./variables/variants";
+import { createLogger } from "../../utils/index.js";
+import { GodotDebugData, GodotStackVars, GodotVariable } from "../debug_runtime.js";
+import { AttachRequestArguments, LaunchRequestArguments } from "../debugger.js";
+import { InspectorProvider } from "../inspector_provider.js";
+import { SceneTreeProvider } from "../scene_tree_provider.js";
+import { is_variable_built_in_type, parse_variable } from "./helpers.js";
+import { ServerController } from "./server_controller.js";
+import { ObjectId } from "./variables/variants.js";
 
 const log = createLogger("debugger.session", { output: "Godot Debugger" });
 

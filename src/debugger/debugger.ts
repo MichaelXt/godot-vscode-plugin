@@ -20,13 +20,13 @@ import {
 	window,
 	workspace,
 } from "vscode";
-import { createLogger, get_project_version, register_command, set_context } from "../utils";
-import { GodotVariable } from "./debug_runtime";
-import { GodotDebugSession as Godot3DebugSession } from "./godot3/debug_session";
-import { GodotDebugSession as Godot4DebugSession } from "./godot4/debug_session";
-import { GodotObject } from "./godot4/variables/godot_object_promise";
-import { InspectorProvider, RemoteProperty } from "./inspector_provider";
-import { SceneNode, SceneTreeProvider } from "./scene_tree_provider";
+import { createLogger, get_project_version, register_command, set_context } from "../utils/index.js";
+import { GodotVariable } from "./debug_runtime.js";
+import { GodotDebugSession as Godot3DebugSession } from "./godot3/debug_session.js";
+import { GodotDebugSession as Godot4DebugSession } from "./godot4/debug_session.js";
+import { GodotObject } from "./godot4/variables/godot_object_promise.js";
+import { InspectorProvider, RemoteProperty } from "./inspector_provider.js";
+import { SceneNode, SceneTreeProvider } from "./scene_tree_provider.js";
 
 const log = createLogger("debugger", { output: "Godot Debugger" });
 

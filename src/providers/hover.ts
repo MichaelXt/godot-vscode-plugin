@@ -9,8 +9,8 @@ import {
 	MarkdownString,
 	Hover,
 } from "vscode";
-import { SceneParser } from "../scene_tools";
-import { convert_resource_path_to_uri, createLogger, convert_uid_to_uri, convert_uri_to_resource_path } from "../utils";
+import { SceneParser } from "../scene_tools/index.js";
+import { convert_resource_path_to_uri, createLogger, convert_uid_to_uri, convert_uri_to_resource_path } from "../utils/index.js";
 
 const log = createLogger("providers.hover");
 

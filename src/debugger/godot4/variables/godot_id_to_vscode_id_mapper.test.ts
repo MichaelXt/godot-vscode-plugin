@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { GodotIdWithPath, GodotIdToVscodeIdMapper } from "./godot_id_to_vscode_id_mapper";
+import { GodotIdWithPath, GodotIdToVscodeIdMapper } from "./godot_id_to_vscode_id_mapper.js";
 
 suite("GodotIdToVscodeIdMapper", () => {
 	test("create_vscode_id assigns unique ID", () => {

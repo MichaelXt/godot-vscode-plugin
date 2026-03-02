@@ -1,9 +1,9 @@
 import { DebugProtocol } from "@vscode/debugprotocol";
-import { GodotVariable } from "../../debug_runtime";
-import { ServerController } from "../server_controller";
-import { GodotIdToVscodeIdMapper, GodotIdWithPath } from "./godot_id_to_vscode_id_mapper";
-import { GodotObject, GodotObjectPromise } from "./godot_object_promise";
-import { ObjectId } from "./variants";
+import { GodotVariable } from "../../debug_runtime.js";
+import { ServerController } from "../server_controller.js";
+import { GodotIdToVscodeIdMapper, GodotIdWithPath } from "./godot_id_to_vscode_id_mapper.js";
+import { GodotObject, GodotObjectPromise } from "./godot_object_promise.js";
+import { ObjectId } from "./variants.js";
 
 export interface VsCodeScopeIDs {
 	Locals: number;

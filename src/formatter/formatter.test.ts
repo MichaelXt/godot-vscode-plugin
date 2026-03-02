@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as vscode from "vscode";
 
-import { format_document, type FormatterOptions } from "./textmate";
+import { format_document, type FormatterOptions } from "./textmate.js";
 
 import { expect } from "chai";
 

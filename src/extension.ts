@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as vscode from "vscode";
-import { attemptSettingsUpdate, get_extension_uri, clean_godot_path } from "./utils";
+import { attemptSettingsUpdate, get_extension_uri, clean_godot_path } from "./utils/index.js";
 import {
 	GDInlayHintsProvider,
 	GDHoverProvider,
@@ -12,11 +12,11 @@ import {
 	GDDocumentationProvider,
 	GDDefinitionProvider,
 	GDTaskProvider,
-} from "./providers";
-import { ClientConnectionManager } from "./lsp";
-import { ScenePreviewProvider } from "./scene_tools";
-import { GodotDebugger } from "./debugger";
-import { FormattingProvider } from "./formatter";
+} from "./providers/index.js";
+import { ClientConnectionManager } from "./lsp/index.js";
+import { ScenePreviewProvider } from "./scene_tools/index.js";
+import { GodotDebugger } from "./debugger/index.js";
+import { FormattingProvider } from "./formatter/index.js";
 import {
 	get_configuration,
 	find_file,
@@ -28,9 +28,9 @@ import {
 	get_project_version,
 	verify_godot_version,
 	convert_uri_to_resource_path,
-} from "./utils";
-import { prompt_for_godot_executable } from "./utils/prompts";
-import { killSubProcesses, subProcess } from "./utils/subspawn";
+} from "./utils/index.js";
+import { prompt_for_godot_executable } from "./utils/prompts.js";
+import { killSubProcesses, subProcess } from "./utils/subspawn.js";
 
 interface Extension {
 	context?: vscode.ExtensionContext;

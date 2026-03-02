@@ -2,7 +2,6 @@ import * as fs from "node:fs";
 import * as net from "node:net";
 import { StoppedEvent, TerminatedEvent } from "@vscode/debugadapter";
 import { DebugProtocol } from "@vscode/debugprotocol";
-import BBCodeToAnsi from "bbcode-to-ansi";
 import { debug, window } from "vscode";
 import {
 	VERIFY_RESULT,
@@ -13,21 +12,23 @@ import {
 	get_free_port,
 	get_project_version,
 	verify_godot_version,
-} from "../../utils";
-import { prompt_for_godot_executable } from "../../utils/prompts";
-import { killSubProcesses, subProcess } from "../../utils/subspawn";
-import { GodotStackFrame, GodotVariable } from "../debug_runtime";
-import { AttachRequestArguments, LaunchRequestArguments, pinnedScene } from "../debugger";
-import { GodotDebugSession } from "./debug_session";
-import { get_sub_values, parse_next_scene_node, split_buffers } from "./helpers";
-import { VariantDecoder } from "./variables/variant_decoder";
-import { VariantEncoder } from "./variables/variant_encoder";
-import { RawObject } from "./variables/variants";
+} from "../../utils/index.js";
+import { prompt_for_godot_executable } from "../../utils/prompts.js";
+import { killSubProcesses, subProcess } from "../../utils/subspawn.js";
+import { GodotStackFrame, GodotVariable } from "../debug_runtime.js";
+import { AttachRequestArguments, LaunchRequestArguments, pinnedScene } from "../debugger.js";
+import { GodotDebugSession } from "./debug_session.js";
+import { get_sub_values, parse_next_scene_node, split_buffers } from "./helpers.js";
+import { VariantDecoder } from "./variables/variant_decoder.js";
+import { VariantEncoder } from "./variables/variant_encoder.js";
+import { RawObject } from "./variables/variants.js";
+
+import BBCodeToAnsiModule from "bbcode-to-ansi";
 
 const log = createLogger("debugger.controller", { output: "Godot Debugger" });
 const socketLog = createLogger("debugger.socket");
 //initialize bbcodeParser and set default output color to grey
-const bbcodeParser = new BBCodeToAnsi("\u001b[38;2;211;211;211m");
+const bbcodeParser = new BBCodeToAnsiModule.default("\u001b[38;2;211;211;211m");
 
 class Command {
 	public command = "";

@@ -1,8 +1,8 @@
 import * as fs from "node:fs";
 import { basename, extname } from "node:path";
 import { TextDocument, Uri } from "vscode";
-import { SceneNode, Scene } from "./types";
-import { createLogger } from "../utils";
+import { SceneNode, Scene } from "./types.js";
+import { createLogger } from "../utils/index.js";
 
 const log = createLogger("scenes.parser");
 

@@ -1,5 +1,6 @@
 {
 	"name": "godot-tools",
+	"type": "module",
 	"displayName": "godot-tools",
 	"icon": "icon.png",
 	"version": "2.6.1",

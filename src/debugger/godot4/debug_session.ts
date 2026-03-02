@@ -9,13 +9,13 @@ import {
 import { DebugProtocol } from "@vscode/debugprotocol";
 import { Subject } from "await-notify";
 import * as fs from "node:fs";
-import { createLogger } from "../../utils";
-import { GodotDebugData } from "../debug_runtime";
-import { AttachRequestArguments, LaunchRequestArguments } from "../debugger";
-import { InspectorProvider } from "../inspector_provider";
-import { SceneTreeProvider } from "../scene_tree_provider";
-import { ServerController } from "./server_controller";
-import { VariablesManager } from "./variables/variables_manager";
+import { createLogger } from "../../utils/index.js";
+import { GodotDebugData } from "../debug_runtime.js";
+import { AttachRequestArguments, LaunchRequestArguments } from "../debugger.js";
+import { InspectorProvider } from "../inspector_provider.js";
+import { SceneTreeProvider } from "../scene_tree_provider.js";
+import { ServerController } from "./server_controller.js";
+import { VariablesManager } from "./variables/variables_manager.js";
 
 const log = createLogger("debugger.session", { output: "Godot Debugger" });
 

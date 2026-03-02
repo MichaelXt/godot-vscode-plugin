@@ -10,8 +10,8 @@ import {
 	ExtensionContext,
 	TextLine,
 } from "vscode";
-import { make_docs_uri, createLogger } from "../utils";
-import { globals } from "../extension";
+import { make_docs_uri, createLogger } from "../utils/index.js";
+import { globals } from "../extension.js";
 
 const log = createLogger("providers.definitions");
 

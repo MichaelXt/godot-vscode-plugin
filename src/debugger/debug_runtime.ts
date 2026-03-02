@@ -1,7 +1,7 @@
 import * as path from "node:path";
 
-import { createLogger } from "../utils";
-import { SceneTreeProvider } from "./scene_tree_provider";
+import { createLogger } from "../utils/index.js";
+import { SceneTreeProvider } from "./scene_tree_provider.js";
 
 const log = createLogger("debugger.runtime");
 

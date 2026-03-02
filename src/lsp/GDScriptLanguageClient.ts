@@ -9,11 +9,11 @@ import {
 	type RequestMessage,
 	type ResponseMessage,
 	type ServerOptions,
-} from "vscode-languageclient/node";
+} from "vscode-languageclient/node.js";
 
-import { globals } from "../extension";
-import { createLogger, get_configuration, get_project_dir } from "../utils";
-import { MessageIO } from "./MessageIO";
+import { globals } from "../extension.js";
+import { createLogger, get_configuration, get_project_dir } from "../utils/index.js";
+import { MessageIO } from "./MessageIO.js";
 
 const log = createLogger("lsp.client", { output: "Godot LSP" });
 

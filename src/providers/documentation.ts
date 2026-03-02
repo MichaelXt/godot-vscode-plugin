@@ -14,10 +14,10 @@ import type {
 	GodotNativeSymbol,
 	GodotNativeClassInfo,
 	GodotCapabilities,
-} from "./documentation_types";
-import { make_html_content } from "./documentation_builder";
-import { createLogger, get_configuration, get_extension_uri, make_docs_uri } from "../utils";
-import { globals } from "../extension";
+} from "./documentation_types.js";
+import { make_html_content } from "./documentation_builder.js";
+import { createLogger, get_configuration, get_extension_uri, make_docs_uri } from "../utils/index.js";
+import { globals } from "../extension.js";
 
 const log = createLogger("providers.docs");
 

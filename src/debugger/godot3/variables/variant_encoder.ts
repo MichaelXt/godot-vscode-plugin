@@ -11,7 +11,7 @@ import {
 	Rect2,
 	Transform,
 	Transform2D,
-} from "./variants";
+} from "./variants.js";
 
 export class VariantEncoder {
 	public encode_variant(

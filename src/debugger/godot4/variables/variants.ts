@@ -1,4 +1,4 @@
-import { GodotVariable } from "../../debug_runtime";
+import { GodotVariable } from "../../debug_runtime.js";
 
 export enum GDScriptTypes {
 	NIL = 0,

@@ -24,9 +24,9 @@ import {
 	make_docs_uri,
 	register_command,
 	set_context,
-} from "../utils";
-import { SceneParser } from "./parser";
-import type { Scene, SceneNode } from "./types";
+} from "../utils/index.js";
+import { SceneParser } from "./parser.js";
+import type { Scene, SceneNode } from "./types.js";
 
 const log = createLogger("scenes.preview");
 
